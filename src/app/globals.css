@@ -2,6 +2,6 @@
 @import "tailwindcss";
 
 html {
-    font-family: "Inter";
+    /* font-family: "Inter"; */
     scroll-behavior: smooth;
 }

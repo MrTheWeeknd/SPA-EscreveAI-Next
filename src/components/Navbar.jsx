@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -16,26 +17,25 @@ export default function Navbar() {
         >
           {['Features', 'Perguntas frequentes'].map((text) => (
             <li key={text} className="mx-4 my-2 md:my-0 text-sm font-medium">
-              <a
+              <Link
                 href={`#${text.toLowerCase().replace(' ', '')}`}
                 className="hover:text-blue-600"
               >
                 {text}
-              </a>
+              </Link>
             </li>
           ))}
           <li className="mx-4 my-2 md:my-0 text-sm font-medium">
-            <a href="#login" className="hover:text-blue-600">
-              Entrar
-            </a>
+            <Link href="/login">
+              <span className="hover:text-blue-600">Entrar</span>
+            </Link>
           </li>
           <li className="mx-4 my-2 md:my-0">
-            <a
-              href="#cadastro"
-              className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
-            >
-              Cadastre-se
-            </a>
+            <Link href="/register">
+              <span className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
+                Cadastre-se
+              </span>
+            </Link>
           </li>
         </ul>
 
