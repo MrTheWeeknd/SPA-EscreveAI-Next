@@ -43,7 +43,7 @@ export default function VerifyCodePage() {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label className="block mb-2 font-medium">Código de acesso</label>
-          <div className="flex space-x-2">
+          <div className="flex w-full justify-center space-x-2">
             {code.map((num, i) => (
               <input
                 key={i}
