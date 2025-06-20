@@ -17,7 +17,7 @@ export default function ForgotPasswordPage() {
     <AuthContainer
       illustration={
         <AuthIllustration
-          logo="/logoBranca.svg"
+          logo="/LogoBranca.svg"
           src="/Coder.svg"
           alt="Esqueci a senha"
           caption="Desbloqueie o potencial da sua escrita."

@@ -26,7 +26,7 @@ export default function VerifyCodePage() {
     <AuthContainer
       illustration={
         <AuthIllustration
-          logo="/logoBranca.svg"
+          logo="/LogoBranca.svg"
           src="/Coder.svg"
           alt="Código de acesso"
           caption="Desbloqueie o potencial da sua escrita."

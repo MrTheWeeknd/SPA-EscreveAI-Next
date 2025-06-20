@@ -22,7 +22,7 @@ export default function ResetPasswordPage() {
     <AuthContainer
       illustration={
         <AuthIllustration
-          logo="/logoBranca.svg"
+          logo="/LogoBranca.svg"
           src="/Coder.svg"
           alt="Redefinir senha"
           caption="Desbloqueie o potencial da sua escrita."
