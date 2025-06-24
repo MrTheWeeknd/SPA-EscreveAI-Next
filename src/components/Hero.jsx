@@ -12,7 +12,9 @@ export default function Hero() {
             Treine com temas motivadores, receba correções automáticas e acompanhe seu progresso.
           </p>
           <a
-            href="#"
+            href="https://escreveai-frontend.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-x1 inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700"
           >
             Começar a escrever →

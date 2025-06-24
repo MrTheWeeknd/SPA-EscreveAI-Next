@@ -26,17 +26,27 @@ export default function Navbar() {
             </li>
           ))}
           <li className="mx-4 my-2 md:my-0 text-sm font-medium">
-            <Link href="/login">
-              <span className="hover:text-blue-600">Entrar</span>
-            </Link>
+            <a
+              href="https://escreveai-frontend.onrender.com"
+              className="hover:text-blue-600"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Entrar
+            </a>
           </li>
+
           <li className="mx-4 my-2 md:my-0">
-            <Link href="/register">
-              <span className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
-                Cadastre-se
-              </span>
-            </Link>
+            <a
+              href="https://escreveai-frontend.onrender.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
+            >
+              Cadastre-se
+            </a>
           </li>
+
         </ul>
 
         {/*mobile*/}
