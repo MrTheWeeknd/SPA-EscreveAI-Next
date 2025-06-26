@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20 bg-blue-600">
       <div className="max-w-md mx-auto bg-white p-8 rounded-xl text-center shadow">
         <img
           src="./Start up idea.svg"
@@ -16,6 +16,10 @@ export default function CTA() {
                 Criar conta →
               </span>
         </a>
+      </div>
+
+      <div className="text-center py-4 text-white text-sm">
+        <a href="#Hero" className="hover:underline">↑ Voltar ao topo</a>
       </div>
     </section>
   );
