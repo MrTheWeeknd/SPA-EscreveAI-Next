@@ -1,10 +1,11 @@
 "use client";
 import { useState } from "react";
+import { Transition } from '@headlessui/react'
 
 const faqs = [
   {
     q: 'O serviço é gratuito?',
-    a: 'Sim! Você pode usar todas as funcionalidades do EscreveAI sem pagar nada. Basta se cadastrar e começar a escrever.',
+    a: 'Sim! Você pode usar todas as funcionalidades do SmartRedações sem pagar nada. Basta se cadastrar e começar a escrever.',
   },
   {
     q: 'Posso ver minhas redações antigas?',
@@ -16,7 +17,7 @@ const faqs = [
   },
   {
     q: 'Preciso instalar algum programa?',
-    a: 'Não. O EscreveAI funciona totalmente online. Você só precisa de um navegador com acesso à internet para começar a escrever.',
+    a: 'Não. O SmartRedações funciona totalmente online. Você só precisa de um navegador com acesso à internet para começar a escrever.',
   },
   {
     q: 'É indicado para quem está se preparando para o ENEM?',
@@ -43,13 +44,25 @@ export default function FAQ() {
                 <span className='text-2x1 font-bold'>{item.q}</span>
                 <span>{openIndex === i ? '–' : '+'}</span>
               </button>
-              {openIndex === i && <p className="pb-4 text-gray-700 text-x1">{item.a}</p>}
+              <Transition
+                show={openIndex === i}
+                enter="transition-all duration-500 ease-out"
+                enterFrom="opacity-0 transform scale-y-95 -translate-y-2"
+                enterTo="opacity-100 transform scale-y-100 translate-y-0"
+                leave="transition-all duration-200 ease-in"
+                leaveFrom="opacity-100 transform scale-y-100 translate-y-0"
+                leaveTo="opacity-0 transform scale-y-95 -translate-y-2"
+              >
+                <div className="overflow-hidden max-h-[500px]">
+                  <p className="pb-4 text-gray-700 text-x1">{item.a}</p>
+                </div>
+              </Transition>
             </div>
           ))}
         </div>
         <p className="mt-6 text-center text-x1 text-black">
           Não achou o que queria? 
-          Entre em contato conosco em <a>duvidas@escreveai.com</a>.
+          Entre em contato conosco em <a>duvidas@smartredacoes.com</a>.
         </p>
       </div>
     </section>

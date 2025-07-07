@@ -2,7 +2,7 @@ import './globals.css'
 import { ReactNode } from 'react'
 
 export const metadata = {
-  title: 'EscreveAI',
+  title: 'SmartRedações',
   description: 'Sua plataforma de auxílio à redação',
 }
 

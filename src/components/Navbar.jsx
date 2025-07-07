@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full bg-white shadow z-50" id="top">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <img src="./logo (3).svg" alt="Logo EscreveAI" className="w-46 h-10 mr-2"/>        
+        <img src="./logo (3).svg" alt="Logo SmartRedações" className="w-46 h-10 mr-2"/>        
         <ul
           className={`md:flex md:items-center md:static absolute bg-white w-full md:w-auto left-0 md:opacity-100 transition-all duration-300 ease-in-out ${
             open ? 'top-16 opacity-100' : 'top-[-500px] opacity-0'
@@ -28,7 +28,6 @@ export default function Navbar() {
             <a
               href="https://escreveai-frontend.onrender.com"
               className="hover:text-blue-600"
-              target="_blank"
               rel="noopener noreferrer"
             >
               Entrar
@@ -38,7 +37,6 @@ export default function Navbar() {
           <li className="mx-4 my-2 md:my-0">
             <a
               href="https://escreveai-frontend.onrender.com"
-              target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
             >

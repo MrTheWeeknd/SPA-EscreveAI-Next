@@ -23,10 +23,10 @@ export default function Features() {
   return (
     <section id="features" className="py-20 bg-blue-600">
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <h3 className="text-6xl font-semibold text-white">
+        <h3 className="text-6xl text-white font-semibold mb-4">
           Evolua a sua escrita dissertativa de forma gratuita.
         </h3>
-        <p className="mt-2 text-white text-2xl">
+        <p className="text-3x1 text-white mt-2 max-sm:p-1">
           Confira as ferramentas criadas para te ajudar a escrever e aperfeiçoar suas redações.
         </p>
       </div>

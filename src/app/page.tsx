@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className="text-black">
+    <div className="text-black max-sm:justify-center max-sm:items-center max-sm:text-center">
       <Navbar />
       <Hero />
       <Features />
