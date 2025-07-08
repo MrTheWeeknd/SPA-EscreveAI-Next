@@ -8,7 +8,7 @@ export default function PasswordField({ label, ...props }) {
       <div className="relative">
         <input
           type={visible ? "text" : "password"}
-          className="w-full p-3 border border-gray-300 rounded-3xl focus:outline-indigo-500 pr-10"
+          className="w-full p-3 border border-gray-300 rounded-3xl focus:outline-blue-500 pr-10"
           {...props}
         />
         <button

@@ -7,7 +7,7 @@ export default function AuthHeader({ title, question, linkText, linkHref }) {
       <p className="mt-2 text-sm text-center">
         {question}{" "}
         <Link href={linkHref}>
-          <span className="text-indigo-600 font-bold hover:underline">{linkText}</span>
+          <span className="text-blue-700 font-bold hover:underline">{linkText}</span>
         </Link>
       </p>
     </header>
