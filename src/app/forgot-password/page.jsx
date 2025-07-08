@@ -44,10 +44,10 @@ export default function ForgotPasswordPage() {
         <button
           type="submit"
           className="px-8 py-3 
-            bg-indigo-600 
+            bg-blue-600 
             text-white 
             rounded-3xl 
-            hover:bg-indigo-700 
+            hover:bg-blue-700 
             transition 
             mx-auto block"
         >

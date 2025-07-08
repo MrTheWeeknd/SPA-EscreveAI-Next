@@ -47,7 +47,7 @@ export default function LoginPage() {
         />
         <button
           type="submit"
-          className="w-full lg:w-auto px-8 py-3 bg-indigo-600 text-white rounded-3xl hover:bg-indigo-700 transition mx-auto block"
+          className="w-full lg:w-auto px-8 py-3 bg-blue-600 text-white rounded-3xl hover:bg-blue-700 transition mx-auto block"
         >
           Entrar
         </button>
