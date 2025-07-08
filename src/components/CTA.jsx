@@ -11,7 +11,7 @@ export default function CTA() {
           className="mx-auto mb-6 w-68 h-68"
         />
         <h3 className="text-5xl font-semibold mb-4">Vamos começar?</h3>
-        <a href="https://escreveai-frontend.onrender.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://escreveai-frontend.onrender.com" rel="noopener noreferrer">
               <span className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">
                 Criar conta →
               </span>
