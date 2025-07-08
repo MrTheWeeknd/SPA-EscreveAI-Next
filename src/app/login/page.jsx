@@ -1,3 +1,4 @@
+// src/app/login/page.jsx
 "use client";
 import { useState } from "react";
 import AuthContainer from "../components/auth/AuthContainer";
@@ -28,7 +29,6 @@ export default function LoginPage() {
         linkText="Cadastre‑se aqui."
         linkHref="/register"
       />
-
       <form className="space-y-4">
         <InputField
           label="Email"
@@ -45,33 +45,15 @@ export default function LoginPage() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-
-        <div className="text-right">
-          <a href="/forgot-password" className="text-sm text-gray-600 hover:underline">
-            Esqueci minha senha
-          </a>
-        </div>
-
         <button
-        type="submit"
-        className="
-            px-8 py-3 
-            bg-indigo-600 
-            text-white 
-            rounded-3xl 
-            hover:bg-indigo-700 
-            transition 
-            mx-auto block
-        "
+          type="submit"
+          className="w-full lg:w-auto px-8 py-3 bg-indigo-600 text-white rounded-3xl hover:bg-indigo-700 transition mx-auto block"
         >
-        Entrar
+          Entrar
         </button>
-
-
         <div className="relative my-6 text-center">
           <span className="bg-white px-3 text-sm text-gray-500">Ou entre com</span>
         </div>
-
         <SocialLoginButton onClick={() => {}} iconSrc="/google.png">
           Google
         </SocialLoginButton>

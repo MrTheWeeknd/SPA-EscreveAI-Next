@@ -1,3 +1,4 @@
+// src/app/register/page.jsx
 "use client";
 import { useState } from "react";
 import AuthContainer from "../components/auth/AuthContainer";
@@ -5,6 +6,7 @@ import AuthIllustration from "../components/auth/AuthIllustration";
 import AuthHeader from "../components/auth/AuthHeader";
 import InputField from "../components/auth/InputField";
 import PasswordField from "../components/auth/PasswordField";
+import SocialLoginButton from "../components/auth/SocialLoginButton";
 
 export default function RegisterPage() {
   const [name, setName] = useState("");
@@ -29,7 +31,6 @@ export default function RegisterPage() {
         linkText="Faça seu login aqui."
         linkHref="/login"
       />
-
       <form className="space-y-4">
         <InputField
           label="Nome"
@@ -61,23 +62,19 @@ export default function RegisterPage() {
           onChange={(e) => setConfirm(e.target.value)}
           required
         />
-
         <button
-        type="submit"
-        className="
-            px-8 py-3 
-            bg-indigo-600 
-            text-white 
-            rounded-3xl 
-            hover:bg-indigo-700 
-            transition 
-            mx-auto block
-        "
+          type="submit"
+          className="w-full lg:w-auto px-8 py-3 bg-indigo-600 text-white rounded-3xl hover:bg-indigo-700 transition mx-auto block"
         >
-        Criar conta
+          Criar conta
         </button>
-
       </form>
+      <div className="relative my-6 text-center">
+        <span className="bg-white px-3 text-sm text-gray-500">Ou cadastre com</span>
+      </div>
+      <SocialLoginButton onClick={() => {}} iconSrc="/google.png">
+        Google
+      </SocialLoginButton>
     </AuthContainer>
   );
 }
