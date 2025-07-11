@@ -62,7 +62,7 @@ export default function FAQ() {
         </div>
         <p className="mt-6 text-center text-x1 text-black">
           Não achou o que queria? 
-          Entre em contato conosco em <a>duvidas@smartredacoes.com</a>.
+          Entre em contato conosco em <a>smartredacoes@gmail.com</a> ou (92)98143-2122.
         </p>
       </div>
     </section>
